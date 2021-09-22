@@ -5,7 +5,7 @@ import { LikeButton } from './components';
 function SpaceImage( { props } ) {
   
   return (
-    <div>
+    <div class='ui three column grid' style={{ padding: 40, justifyContent: 'space-between' }}>
       {props.map((image) => 
       <Card>
         <Image src={image.url} wrapped ui={false} />
