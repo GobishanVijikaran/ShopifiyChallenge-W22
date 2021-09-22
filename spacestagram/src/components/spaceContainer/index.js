@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { Grid, Segment, Dimmer, Loader, Card } from 'semantic-ui-react';
+import { Dimmer, Loader } from 'semantic-ui-react';
 import SpaceImage from '../spaceImage';
 
 function SpaceContainer() {
@@ -15,15 +15,10 @@ function SpaceContainer() {
         (result) => {
           setShowLoader(false);
           setImages(result);
-          console.log(result);
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           console.log('error');
           setShowLoader(false);
-          // setError(error);
         }
       )
   }, [api_url])

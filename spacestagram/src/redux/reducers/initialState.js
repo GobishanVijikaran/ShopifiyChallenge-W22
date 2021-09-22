@@ -1,7 +1,7 @@
 export const initialState = {
   images: {
     status: 'init',
-    likedImageStore: {}
+    liked: false,
   }
 };
 

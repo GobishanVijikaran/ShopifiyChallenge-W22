@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import { LikeButton } from './components';
 
 function SpaceImage( { props } ) {
@@ -19,7 +19,9 @@ function SpaceImage( { props } ) {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <LikeButton />
+          <div style={{ display: "flex", justifyContent: 'center'}}>
+            <LikeButton />
+          </div>
       </Card.Content>
     </Card>
     )}
